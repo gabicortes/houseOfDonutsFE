@@ -1,0 +1,154 @@
+.navBarDiv {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  top: 0;
+  z-index: 5;
+}
+
+.imageNavBar {
+  height: 75px;
+  width: auto;
+  object-fit: cover;
+  padding: 0 15px;
+}
+
+.logo {
+  height: 64px;
+  width: auto;
+  object-fit: cover;
+  padding: 0 15px;
+}
+
+.buttonNavBar {
+  text-decoration: none;
+  color: black;
+}
+
+.buttonNavBar {
+  margin: 0px 15px;
+}
+
+.buttonNavBar:hover {
+  cursor: pointer;
+}
+
+.burgerMenuButton {
+  display: none;
+  width: 35px;
+  height: 45px;
+  margin-right: 35px;
+}
+
+.burgerMenu {
+  position: fixed;
+  top: 100px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  opacity: 1;
+  z-index: 5;
+}
+
+.buttonBurgerNavBar {
+  cursor: pointer;
+  padding: 13px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.openMenuWrapper {
+  opacity: 1;
+  transition: all 1s ease;
+  position: fixed;
+  left: 50vw;
+  top: 0px;
+}
+
+.closedMenuWrapper {
+  opacity: 0;
+  transition: all 1s ease;
+  position: fixed;
+  left: 100vw;
+  top: 0px;
+}
+
+.buttonBuyDonuts {
+  background-color: black;
+  color: white;
+  font-size: 19px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid white;
+  z-index: 5;
+  position: fixed;
+  top: 24px;
+  right: 7px;
+}
+
+.buttonBuyDonuts:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+
+.linkComprar {
+  text-decoration: none;
+  color: black;
+}
+
+.linkComprar:hover {
+  text-decoration: none;
+}
+.linkComprar:visited {
+  text-decoration: none;
+  color: black;
+}
+.buttonBuyDonutsonBurgerMenu {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .buttonBuyDonuts {
+    top: 24px;
+    right: 86px;
+  }
+
+  .buttonsNavBar {
+    display: none;
+  }
+
+  .burgerMenuButton {
+    display: block;
+  }
+
+  .burgerMenu {
+    display: flex;
+  }
+
+  .navBarDiv {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .buttonBuyDonuts {
+    font-size: 14px;
+    padding: 9px;
+    top: 30px;
+    right: 81px;
+  }
+  .imageNavBar {
+    height: 60%;
+  }
+  .buttonBurgerNavBar {
+    padding: 16px 15px;
+  }
+}
